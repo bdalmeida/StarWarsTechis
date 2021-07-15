@@ -13,7 +13,7 @@ import com.starwars.StarWars.services.PlanetaService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@RestController
+//@RestController
 public class PlanetaController {
 	
 	@Autowired
