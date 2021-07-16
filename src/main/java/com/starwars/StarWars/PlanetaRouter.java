@@ -1,17 +1,15 @@
 package com.starwars.StarWars;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
 
-@Configuration
+//@Configuration
 public class PlanetaRouter {
 
-	@Bean
+//	@Bean
 	public RouterFunction<ServerResponse> route(PlanetaHandler handler){
 		return RouterFunctions
 				.route(GET("/planeta").and(accept(MediaType.APPLICATION_JSON)),handler::findAll)

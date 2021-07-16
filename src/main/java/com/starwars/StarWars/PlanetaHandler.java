@@ -16,7 +16,7 @@ import com.starwars.StarWars.services.PlanetaService;
 
 import reactor.core.publisher.Mono;
 
-@Component
+//@Component
 public class PlanetaHandler {
 	
 	@Autowired
